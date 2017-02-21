@@ -6,6 +6,7 @@ import {
   StatusBar,
   StyleSheet,
   View,
+  Alert,
 } from 'react-native';
 import {
   NavigationProvider,
@@ -46,6 +47,7 @@ class AppContainer extends React.Component {
       console.log(e.message);
     } finally {
       this.setState({appIsReady: true});
+      Alert.alert('click the icons until it crashes!');
     }
   }
 
